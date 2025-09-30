@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>Computación de Borde (Edge Computing)</title>
+  <!-- Importando Materialize -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+  <style>
+    header {
+      background: #2c3e50;
+      color: white;
+      padding: 40px 0;
+      margin-top: 50px;
+    }
+    nav .brand-logo {
+      font-size: 1.5rem; 
+      white-space: nowrap; 
+      overflow: hidden; 
+      text-overflow: ellipsis; 
+      max-width: 70%;
+    }
+    .section-img {
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      cursor: pointer;
+    }
+    .section-img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+    }
+    iframe {
+      width: 100%;
+      height: 400px;
+      border: none;
+    }
+    .fade-in-left, .fade-in-right {
+      opacity: 0;
+      transition: all 1s ease;
+    }
+    .fade-in-left {
+      transform: translateX(-50px);
+    }
+    .fade-in-right {
+      transform: translateX(50px);
+    }
+    .fade-in.show {
+      opacity: 1;
+      transform: translateX(0);
+    }
+    html, body {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+
+    main {
+      flex: 1 0 auto; 
+    }
+
+    footer {
+      margin-top: auto; 
+    }
+  </style>
+</head>
+
+<body>
+    <!-- Navbar fija -->
+    <div class="navbar-fixed">
+      <nav class="indigo darken-4">
+        <div class="nav-wrapper container">
+         <a class="brand-logo" href="inicio11.html">
+            <span style="white-space: nowrap;">Tecnologías Emergentes</span>
+          </a>
+          <a class="sidenav-trigger" data-target="mobile-demo" href="#"><i class="material-icons">menu</i></a>
+          <ul class="right hide-on-med-and-down">
+            <li><a href="inicio11.html#inicio">Inicio</a></li>
+            <li><a href="inicio11.html#sobrenosotros">Sobre Nosotros</a></li>
+            <li><a class="dropdown-trigger" data-target="dropdown1" href="#!">
+                      Explora las Tecnologías<i class="material-icons right">arrow_drop_down</i>
+            </a></li>
+            <li><a href="Formulario.html">Contacto</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    <!-- Dropdown con rutas correctas -->
+    <ul class="dropdown-content" id="dropdown1">
+      <li><a href="IA.html">Inteligencia Artificial</a></li>
+      <li><a href="machinelearning.html">Machine Learning</a></li>
+      <li><a href="realidadvirtual.html">Realidad Virtual / AR</a></li>
+      <li><a href="blockchain.html">Blockchain</a></li>
+      <li><a href="internetdelascosas1.html">Internet de las Cosas</a></li>
+      <li><a href="CPC.html">Criptografía Post-Cuántica</a></li>
+      <li><a href="3dimpresion.html">Impresión 3D Avanzada</a></li>
+      <li><a href="Robotica.html">Robótica Avanzada</a></li>
+      <li><a href="edgecomputing.html">Edge Computing</a></li>
+    </ul>
+    <!-- Menú móvil con enlaces -->
+    <ul class="sidenav" id="mobile-demo">
+      <li><a href="inicio11.html#inicio">Inicio</a></li>
+      <li><a href="inicio11.html#sobrenosotros">Sobre Nosotros</a></li>
+      <li><a href="IA.html">Inteligencia Artificial</a></li>
+      <li><a href="machinelearning.html">Machine Learning</a></li>
+      <li><a href="realidadvirtual.html">Realidad Virtual / AR</a></li>
+      <li><a href="blockchain.html">Blockchain</a></li>
+      <li><a href="internetdelascosas1.html">Internet de las Cosas</a></li>
+      <li><a href="CPC.html">Criptografía Post-Cuántica</a></li>
+      <li><a href="3dimpresion.html">Impresión 3D Avanzada</a></li>
+      <li><a href="Robotica.html">Robótica Avanzada</a></li>
+      <li><a href="edgecomputing.html">Edge Computing</a></li>
+      <li><a href="Formulario.html">Contacto</a></li>
+    </ul>
+
+
+  <!-- Encabezado -->
+  <header class="center-align" id="inicio">
+    <div class="container">
+      <h3 class="animate__animated animate__fadeInDown">Edge Computing: Procesamiento Inteligente Cerca de los Datos</h3>
+      <p class="flow-text">Procesamiento inteligente cerca de los datos para respuestas más rápidas y seguras.</p>
+    </div>
+  </header>
+  <main class="container">
+    <!-- Sección 1 -->
+    <div class="row valign-wrapper section" id="que-es">
+      <div class="col s12 m6 fade-in fade-in-left">
+        <h4>¿Qué es y cómo funciona?</h4>
+        <p>
+                El Edge Computing es un modelo que acerca la computación al sitio donde los datos se generan, 
+                lo que facilita respuestas más veloces y eficaces, además de garantizar seguridad sin necesidad 
+                de depender completamente de la nube.  Los nodos locales, como servidores, routers o el mismo aparato,
+                son los que procesan la información de sistemas automatizados, cámaras y sensores.  Únicamente la 
+                información pertinente se envía a la nube para su análisis o almacenamiento a largo plazo.
+              </p>
+      </div>
+      <div class="col s12 m6 center-align fade-in fade-in-right">
+        <img alt="Edge computing diagrama" class="materialboxed responsive-img section-img" src="https://i.blogs.es/ecfcfd/edge/450_1000.jpeg"/>
+      </div>
+    </div>
+    <!-- Sección 2 -->
+    <div class="row valign-wrapper section" id="transformacion">
+      <div class="col s12 m6 center-align fade-in fade-in-left">
+        <img alt="Edge computing 2025" class="materialboxed responsive-img section-img" src="https://static2.pisapapeles.net/uploads/2025/03/Edge-Computing-1.jpg"/>
+      </div>
+      <div class="col s12 m6 fade-in fade-in-right">
+        <h4>Una transformación de paradigma</h4>
+        <p>En los modelos tradicionales, los datos deben viajar hasta la nube, generando latencia y riesgos de seguridad.
+              Con Edge Computing, la información se procesa localmente, ofreciendo respuestas más rápidas y confiables en aplicaciones críticas.</p>
+      </div>
+    </div>
+    <!-- Sección 3 -->
+    <div class="row valign-wrapper section">
+      <div class="col s12 m6 fade-in fade-in-left">
+        <h4>Edge Computing vs. Cloud Computing</h4>
+        <p>
+          Aunque se suele pensar que el Edge Computing reemplazará a la nube, en realidad son tecnologías complementarias.
+        </p>
+        <ul class="collection">
+          <li class="collection-item"><strong>Cloud Computing</strong>: almacenamiento masivo y análisis complejo.</li>
+          <li class="collection-item"><strong>Edge Computing</strong>: procesamiento rápido y local con baja latencia.</li>
+        </ul>
+        <p>
+          Juntas, forman un ecosistema híbrido en el que la nube gestiona lo “macro” y el borde lo “micro”.
+        </p>
+      </div>
+      <div class="col s12 m6 center-align fade-in fade-in-right">
+        <img alt="Artículo Edge Computing" class="materialboxed responsive-img section-img" src="https://fastercapital.com/es/i-es/Computacion-de-borde--capacitar-las-decisiones-en-tiempo-real-en-la-nube--Desaf-os-y-limitaciones-de-la-computaci-n-de-borde.webp"/>
+      </div>
+    </div>
+    <!-- Sección 4 -->
+    <div class="row valign-wrapper section">
+      <div class="col s12 m6 fade-in fade-in-left">
+        <h4>El futuro del Edge Computing</h4>
+        <p>
+        El crecimiento de esta tecnología va de la mano de otras innovaciones:
+        <ul class="collection">
+          <li class="collection-item"><strong>5G y 6G: </strong>ofrecerán conexiones ultrarrápidas que potencian el procesamiento en tiempo real.</li>
+          <li class="collection-item"><strong>Inteligencia Artificial en el borde: </strong>permitirá que los dispositivos aprendan y se adapten sin depender de la nube.</li>
+          <li class="collection-item"><strong>Blockckain:</strong> reforzará la seguridad en entornos distribuidos.</li>
+        </ul>
+        </p></div>
+      <div class="col s12 m6 center-align fade-in fade-in-right">
+        <img alt="Edge Computing" class="materialboxed responsive-img section-img" src="https://media.telefonicatech.com/telefonicatech/uploads/2021/1/10514_Diseno-sin-titulo-12.jpg"/>
+      </div>
+    </div>
+    <!-- Video -->
+    <section class="card fade-in fade-in-left" id="video">
+      <div class="card-content center-align">
+        <h5>Te recomendamos ver este video: </h5>
+        <div class="video-container">
+          <iframe allowfullscreen="" src="https://www.youtube.com/embed/LKW5dhTPCP4" title="Video Edge Computing"></iframe>
+        </div>
+      </div>
+    </section>
+    <!-- Recurso académico -->
+    <section class="card fade-in fade-in-right" id="recursos">
+      <div class="card-content center-align">
+        <h5>Recurso académico</h5>
+        <p>Curso sugerido para aprender seguridad y edge:</p>
+        <a class="btn indigo darken-4" href="https://www.coursera.org/learn/security-at-the-edge-first-course-1" target="_blank">Coursera - Security at the Edge</a>
+      </div>
+    </section>
+  </main>
+  <!-- Footer -->
+ <footer class="page-footer grey darken-3">
+    <div class="container">
+      <div class="row">
+        <!-- Información del sitio -->
+        <div class="col s12 m4 center-align">
+          <h6 class="white-text">Portal de Tecnologías Emergentes</h6>
+          <p class="grey-text text-lighten-3">© 2025 Todos los derechos reservados</p>
+        </div>
+        <!-- Información del proyecto -->
+        <div class="col s12 m4 center-align">
+          <p class="grey-text text-lighten-3">Proyecto Académico - Desarrollo de Software</p>
+          <p class="grey-text text-lighten-3">
+            <i class="material-icons left">code</i> Desarrollado con Materialize
+          </p>
+        </div>
+        <!-- Contacto -->
+        <div class="col s12 m4 center-align">
+          <h6 class="white-text">Contacto</h6>
+          <p class="grey-text text-lighten-3"><i class="material-icons left">email</i> ovbarcia@tes.edu.ec</p>
+          <p class="grey-text text-lighten-3"><i class="material-icons left">email</i> msarguello@tes.edu.ec</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- Materialize JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      M.Sidenav.init(document.querySelectorAll('.sidenav'));
+      M.Materialbox.init(document.querySelectorAll('.materialboxed'));
+      M.Tooltip.init(document.querySelectorAll('.tooltipped'));
+
+      const sections = document.querySelectorAll('.fade-in');
+      function revealOnScroll() {
+        const triggerBottom = window.innerHeight * 0.9;
+        sections.forEach(sec => {
+          const boxTop = sec.getBoundingClientRect().top;
+          if (boxTop < triggerBottom) {
+            sec.classList.add('show');
+          }
+        });
+      }
+      window.addEventListener('scroll', revealOnScroll);
+      revealOnScroll();
+    });
+        M.Dropdown.init(document.querySelectorAll('.dropdown-trigger'), {
+        coverTrigger: false,  
+        constrainWidth: false 
+    });
+  </script>
+</body>
+</html>

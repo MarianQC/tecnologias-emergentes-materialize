@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portal de Tecnologías Emergentes</title>
+
+  <!-- Google Icon Font -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <!-- Materialize CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+  <style>
+    body {
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    main {
+      flex: 1 0 auto;
+    }
+
+    .carousel img {
+      height: 500px;
+      object-fit: cover;
+    }
+
+    .card img {
+      height: 250px;
+      object-fit: contain;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Navbar fija -->
+  <div class="navbar-fixed">
+    <nav class="indigo darken-4">
+      <div class="nav-wrapper container">
+        <a class="brand-logo" href="inicio11.html">
+          <span style="white-space: nowrap;">Tecnologías Emergentes</span>
+        </a>
+        <a class="sidenav-trigger" data-target="mobile-demo" href="#"><i class="material-icons">menu</i></a>
+        <ul class="right hide-on-med-and-down">
+          <li><a href="inicio11.html#inicio">Inicio</a></li>
+          <li><a href="inicio11.html#sobrenosotros">Sobre Nosotros</a></li>
+          <li><a class="dropdown-trigger" data-target="dropdown1" href="#!">
+              Explora las Tecnologías<i class="material-icons right">arrow_drop_down</i>
+            </a></li>
+          <li><a href="Formulario.html">Contacto</a></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+  <!-- Dropdown con rutas correctas -->
+  <ul class="dropdown-content" id="dropdown1">
+    <li><a href="IA.html">Inteligencia Artificial</a></li>
+    <li><a href="machinelearning.html">Machine Learning</a></li>
+    <li><a href="realidadvirtual.html">Realidad Virtual / AR</a></li>
+    <li><a href="blockchain.html">Blockchain</a></li>
+    <li><a href="internetdelascosas1.html">Internet de las Cosas</a></li>
+    <li><a href="CPC.html">Criptografía Post-Cuántica</a></li>
+    <li><a href="3dimpresion.html">Impresión 3D Avanzada</a></li>
+    <li><a href="Robotica.html">Robótica Avanzada</a></li>
+    <li><a href="edgecomputing.html">Edge Computing</a></li>
+  </ul>
+  <!-- Menú móvil con enlaces -->
+  <ul class="sidenav" id="mobile-demo">
+    <li><a href="inicio11.html#inicio">Inicio</a></li>
+    <li><a href="inicio11.html#sobrenosotros">Sobre Nosotros</a></li>
+    <li><a href="IA.html">Inteligencia Artificial</a></li>
+    <li><a href="machinelearning.html">Machine Learning</a></li>
+    <li><a href="realidadvirtual.html">Realidad Virtual / AR</a></li>
+    <li><a href="blockchain.html">Blockchain</a></li>
+    <li><a href="internetdelascosas1.html">Internet de las Cosas</a></li>
+    <li><a href="CPC.html">Criptografía Post-Cuántica</a></li>
+    <li><a href="3dimpresion.html">Impresión 3D Avanzada</a></li>
+    <li><a href="Robotica.html">Robótica Avanzada</a></li>
+    <li><a href="edgecomputing.html">Edge Computing</a></li>
+    <li><a href="Formulario.html">Contacto</a></li>
+  </ul>
+
+  <main>
+    <!-- Bienvenida -->
+    <div class="container center-align section">
+      <h3 class="indigo-text text-darken-4">Bienvenidos al Portal de Tecnologías Emergentes</h3>
+      <p class="flow-text grey-text">Explorando el futuro de la tecnología.</p>
+    </div>
+
+    <!-- Carrusel Tecnologías - Materialize -->
+    <div class="carousel carousel-slider center">
+      <!-- Slide 1 -->
+      <div class="carousel-item indigo white-text">
+        <img src="imagenes/IA.jpg" alt="Inteligencia Artificial" class="responsive-img">
+        <h5>Inteligencia Artificial</h5>
+        <p>Automatización inteligente para transformar industrias.</p>
+      </div>
+
+      <!-- Slide 2 -->
+      <div class="carousel-item deep-purple white-text">
+        <img src="imagenes/blockchain.jpg" alt="Blockchain" class="responsive-img">
+        <h5>Blockchain</h5>
+        <p>Seguridad y transparencia en la era digital.</p>
+      </div>
+
+      <!-- Slide 3 -->
+      <div class="carousel-item teal white-text">
+        <img src="imagenes/IoT.jpg" alt="Internet de las Cosas" class="responsive-img">
+        <h5>Internet de las Cosas</h5>
+        <p>Conectividad inteligente para un mundo interconectado.</p>
+      </div>
+
+      <!-- Slide 4 -->
+      <div class="carousel-item amber black-text">
+        <img src="imagenes/realidadvirtual.jpg" alt="Realidad Virtual" class="responsive-img">
+        <h5>Realidad Virtual</h5>
+        <p>Simulación inmersiva para entrenar, explorar y crear sin límites físicos.</p>
+      </div>
+
+      <!-- Slide 5 -->
+      <div class="carousel-item lime black-text">
+        <img src="imagenes/realidadaumentada.jpg" alt="Realidad Aumentada" class="responsive-img">
+        <h5>Realidad Aumentada</h5>
+        <p>Elementos digitales que enriquecen la percepción del mundo real.</p>
+      </div>
+
+      <!-- Slide 6 -->
+      <div class="carousel-item indigo white-text">
+        <img src="imagenes/machinelearning.jpg" alt="Machine Learning" class="responsive-img">
+        <h5>Machine Learning</h5>
+        <p>Algoritmos que aprenden de los datos para tomar decisiones inteligentes en tiempo real.</p>
+      </div>
+
+      <!-- Slide 7 -->
+      <div class="carousel-item red darken-2 white-text">
+        <img src="imagenes/criptografia.png" alt="Criptografía post-cuántica" class="responsive-img">
+        <h5>Criptografía post-cuántica</h5>
+        <p>Protección digital frente a futuros ataques cuánticos.</p>
+      </div>
+
+      <!-- Slide 8 -->
+      <div class="carousel-item green darken-2 white-text">
+        <img src="imagenes/impresion3d.webp" alt="Impresión 3D Avanzada" class="responsive-img">
+        <h5>Impresión 3D Avanzada</h5>
+        <p>Fabricación precisa y personalizada en múltiples industrias.</p>
+      </div>
+
+      <!-- Slide 9 -->
+      <div class="carousel-item blue-grey white-text">
+        <img src="imagenes/robotica.jpeg" alt="Robótica Avanzada" class="responsive-img">
+        <h5>Robótica Avanzada</h5>
+        <p>Máquinas inteligentes que automatizan tareas complejas.</p>
+      </div>
+
+      <!-- Slide 10 -->
+      <div class="carousel-item orange darken-3 white-text">
+        <img src="imagenes/edgecomputing.png" alt="Edge Computing" class="responsive-img">
+        <h5>Edge Computing</h5>
+        <p>Procesamiento rápido y seguro cerca del origen de los datos.</p>
+      </div>
+    </div>
+
+    <!-- Descripción del sitio -->
+    <div class="container section">
+      <div class="row">
+        <div class="col-12">
+          <p class="flow-text black-text">
+            Este sitio web informativo está dedicado a explorar las <strong>tecnologías emergentes</strong> que están
+            transformando el mundo actual, como la <strong>Inteligencia Artificial</strong>, el <strong>Machine
+              Learning</strong>, la <strong>Realidad Aumentada</strong>, el <strong>Blockchain</strong> y el
+            <strong>Internet
+              de las Cosas</strong>. Cada tema se presenta de forma clara y bien estructurada, permitiendo al visitante
+            comprender sus fundamentos, aplicaciones y potencial innovador.
+            <br><br>
+            El contenido está distribuido en secciones temáticas que facilitan la navegación y el aprendizaje
+            progresivo.
+            Cada
+            tecnología cuenta con una explicación accesible, pensada para estudiantes, docentes y personas interesadas
+            en el
+            impacto de la transformación digital.
+            <br><br>
+            Como complemento, se incluye un <strong>video explicativo</strong> que resume los conceptos clave de manera
+            visual
+            y dinámica, ideal para reforzar la comprensión. Además, se han integrado <strong>enlaces a cursos gratuitos
+              en
+              línea</strong>, seleccionados cuidadosamente para que los usuarios puedan profundizar en los temas
+            tratados y
+            acceder a formación adicional de calidad.
+            <br><br>
+            <em>Esperamos que tu estancia en este Portal de Tecnologías Emergentes sea fructífera, inspiradora y
+              enriquecedora
+              para tu aprendizaje.</em>
+          </p>
+        </div>
+      </div>
+    </div>
+
+  <!-- Sección de Integrantes -->
+<div class="section center-align" id="sobrenosotros">
+  <h4 class="blue-text text-darken-4">Conoce a Nuestro Equipo</h4>
+</div>
+      <div class="container">
+        <div class="row">
+          <!-- Integrante 1 -->
+          <div class="col s12 m6 l3">
+            <div class="card">
+              <div class="card-image">
+                <img src="imagenes/Michelle.jpg" alt="Foto Michelle Arguello"
+                  style="height: 250px; object-fit: contain;">
+              </div>
+              <div class="card-content">
+                <span class="card-title blue-text text-darken-2">Michelle Silvia Arguello Orozco</span>
+                <p class="grey-text">Desarrollo con Materialize – Tecnología en Desarrollo de Software</p>
+                <p>Técnica y analítica, con escucha activa y gran capacidad de aprendizaje. Le gusta Cigarettes After
+                  Sex y la película A Silent Voice.</p>
+                <em>“Deja de cargar el peso de lo que él ya ha borrado.”</em>
+              </div>
+            </div>
+          </div>
+
+          <!-- Integrante 2 -->
+          <div class="col s12 m6 l3">
+            <div class="card">
+              <div class="card-image">
+                <img src="imagenes/Oriana.jpg" alt="Foto Oriana Barcia" style="height: 250px; object-fit: contain;">
+              </div>
+              <div class="card-content">
+                <span class="card-title blue-text text-darken-2">Oriana Valentina Barcia Mantuano</span>
+                <p class="grey-text">Desarrollo con Materialize – Tecnología en Desarrollo de Software</p>
+                <p>Aprende rápido y disfruta del diseño responsivo. Le encantan las series, especialmente Stranger
+                  Things.</p>
+                <em>“Dios me dijo que nada es en vano, que lo bueno ya está por llegar.”</em>
+              </div>
+            </div>
+          </div>
+
+          <!-- Integrante 3 -->
+          <div class="col s12 m6 l3">
+            <div class="card">
+              <div class="card-image">
+                <img src="imagenes/Jhon.jpg" alt="Foto John Carrillo" style="height: 250px; object-fit: contain;">
+              </div>
+              <div class="card-content">
+                <span class="card-title blue-text text-darken-2">Jhon Jairo Carrillo Baduy</span>
+                <p class="grey-text">Desarrollo con Tailwind CSS – Creación de páginas web</p>
+                <p>De pensamiento lógico y adaptable con práctica constante. Le apasionan los videojuegos y películas
+                  animadas como El Rey León y Dragon Ball.</p>
+                <em>“No importa cuántas veces caigo, siempre me tengo que levantar y dar todo de mí.”</em>
+              </div>
+            </div>
+          </div>
+
+          <!-- Integrante 4 -->
+          <div class="col s12 m6 l3">
+            <div class="card">
+              <div class="card-image">
+                <img src="imagenes/Axel.jpg" alt="Foto Axel Montesdeoca" style="height: 250px; object-fit: contain;">
+              </div>
+              <div class="card-content">
+                <span class="card-title blue-text text-darken-2">Axel Ricardo Montesdeoca Tafur</span>
+                <p class="grey-text">Desarrollo con Tailwind – Desarrollo de Software</p>
+                <p>Líder autodidacta, con capacidad para trabajar bajo presión y adaptarse a nuevos retos. Practica
+                  voleibol y disfruta la serie Suits.</p>
+                <em>“Soy lo que hago todos los días, los resultados son un efecto secundario.”</em>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <!-- Integrante 5 -->
+          <div class="col s12 m6 l4">
+            <div class="card">
+              <div class="card-image">
+                <img src="imagenes/Justin.jpg" alt="Foto Justin Pérez" style="height: 250px; object-fit: contain;">
+              </div>
+              <div class="card-content">
+                <span class="card-title blue-text text-darken-2">Justin David Pérez Barros</span>
+                <p class="grey-text">Desarrollo con Tailwind – Tecnología en Desarrollo de Software</p>
+                <p>Creativo y colaborativo, con gusto por el diseño responsivo. Escucha música y explora nuevas ideas en
+                  programación. Le gusta El Chavo del 8.</p>
+                <em>“El esfuerzo constante supera al talento cuando el talento no se esfuerza.”</em>
+              </div>
+            </div>
+          </div>
+
+          <!-- Integrante 6 -->
+          <div class="col s12 m6 l4">
+            <div class="card">
+              <div class="card-image">
+                <img src="imagenes/Maria.jpg" alt="Foto Maria Quijije" style="height: 250px; object-fit: contain;">
+              </div>
+              <div class="card-content">
+                <span class="card-title blue-text text-darken-2">María De Los Ángeles Quijije Cabrera</span>
+                <p class="grey-text">Desarrollo con Bootstrap – Tecnología en Desarrollo de Software</p>
+                <p>Líder meticulosa y creativa, con enfoque en organización, comunicación clara y mejora continua.
+                  Disfruta leer libros y manwhas, y escuchar música.</p>
+                <em>“Solo intento aportar lo mejor de mí, aprendiendo junto a los demás en cada paso del camino.”</em>
+              </div>
+            </div>
+          </div>
+
+          <!-- Integrante 7 -->
+          <div class="col s12 m6 l4">
+            <div class="card">
+              <div class="card-image">
+                <img src="imagenes/Miriel.jpg" alt="Foto Miriel Tello" style="height: 250px; object-fit: contain;">
+              </div>
+              <div class="card-content">
+                <span class="card-title blue-text text-darken-2">Miriel Alexandra Tello Bermúdez</span>
+                <p class="grey-text">Desarrollo con Bootstrap – Desarrollo de Aplicaciones Web</p>
+                <p>Explora nuevas tecnologías con curiosidad y adaptabilidad. Le apasiona el diseño web y disfruta ver
+                  K-dramas.</p>
+                <em>“La tecnología evoluciona, yo también.”</em>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="page-footer grey darken-3">
+    <div class="container">
+      <div class="row">
+        <!-- Información del sitio -->
+        <div class="col s12 m4 center-align">
+          <h6 class="white-text">Portal de Tecnologías Emergentes</h6>
+          <p class="grey-text text-lighten-3">© 2025 Todos los derechos reservados</p>
+        </div>
+        <!-- Información del proyecto -->
+        <div class="col s12 m4 center-align">
+          <p class="grey-text text-lighten-3">Proyecto Académico - Desarrollo de Software</p>
+          <p class="grey-text text-lighten-3">
+            <i class="material-icons left">code</i> Desarrollado con Materialize
+          </p>
+        </div>
+        <!-- Contacto -->
+        <div class="col s12 m4 center-align">
+          <h6 class="white-text">Contacto</h6>
+          <p class="grey-text text-lighten-3"><i class="material-icons left">email</i> ovbarcia@tes.edu.ec</p>
+          <p class="grey-text text-lighten-3"><i class="material-icons left">email</i> msarguello@tes.edu.ec</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Materialize JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      M.Sidenav.init(document.querySelectorAll('.sidenav'));
+      M.Dropdown.init(document.querySelectorAll('.dropdown-trigger'), { coverTrigger: false });
+      var elems = document.querySelectorAll('.carousel.carousel-slider');
+      M.Carousel.init(elems, {
+        fullWidth: true,
+        indicators: true,
+        duration: 300
+      });
+
+      // autoplay
+      setInterval(function () {
+        var instance = M.Carousel.getInstance(document.querySelector('.carousel'));
+        instance.next();
+      }, 4000);
+    });
+
+  </script>
+
+
+</body>
+
+</html>

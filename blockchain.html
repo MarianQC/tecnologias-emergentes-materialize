@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="es">
+
+  <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>Blockchain - Tecnologías Emergentes</title>
+  <!-- Materialize CSS -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+  <style>
+    header {
+      background: linear-gradient(135deg, #2c3e50, #34495e);
+      color: white;
+      padding: 70px 0 40px 0;
+    }
+    header h1 {
+      font-weight: 600;
+    }
+    .section-img {
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+      transition: transform 0.3s ease;
+    }
+    .section-img:hover {
+      transform: scale(1.05);
+    }
+    iframe {
+      width: 100%;
+      height: 250px;
+      border-radius: 8px;
+      border: none;
+    }
+    /* Animaciones */
+    .fade-in-left {
+      opacity: 0;
+      transform: translateX(-50px);
+      transition: all 1s ease;
+    }
+    .fade-in-right {
+      opacity: 0;
+      transform: translateX(50px);
+      transition: all 1s ease;
+    }
+    .fade-in.show {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  </style>
+
+</head>
+
+<body>
+     <!-- Navbar fija -->
+    <div class="navbar-fixed">
+      <nav class="indigo darken-4">
+        <div class="nav-wrapper container">
+         <a class="brand-logo" href="inicio11.html">
+            <span style="white-space: nowrap;">Tecnologías Emergentes</span>
+          </a>
+          <a class="sidenav-trigger" data-target="mobile-demo" href="#"><i class="material-icons">menu</i></a>
+          <ul class="right hide-on-med-and-down">
+            <li><a href="inicio11.html#inicio">Inicio</a></li>
+            <li><a href="inicio11.html#sobrenosotros">Sobre Nosotros</a></li>
+            <li><a class="dropdown-trigger" data-target="dropdown1" href="#!">
+                      Explora las Tecnologías<i class="material-icons right">arrow_drop_down</i>
+            </a></li>
+            <li><a href="Formulario.html">Contacto</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+     <!-- Dropdown con rutas correctas -->
+    <ul class="dropdown-content" id="dropdown1">
+      <li><a href="IA.html">Inteligencia Artificial</a></li>
+      <li><a href="machinelearning.html">Machine Learning</a></li>
+      <li><a href="realidadvirtual.html">Realidad Virtual / AR</a></li>
+      <li><a href="blockchain.html">Blockchain</a></li>
+      <li><a href="internetdelascosas1.html">Internet de las Cosas</a></li>
+      <li><a href="CPC.html">Criptografía Post-Cuántica</a></li>
+      <li><a href="3dimpresion.html">Impresión 3D Avanzada</a></li>
+      <li><a href="Robotica.html">Robótica Avanzada</a></li>
+      <li><a href="edgecomputing.html">Edge Computing</a></li>
+    </ul>
+    <!-- Menú móvil con enlaces -->
+    <ul class="sidenav" id="mobile-demo">
+      <li><a href="inicio11.html#inicio">Inicio</a></li>
+      <li><a href="inicio11.html#sobrenosotros">Sobre Nosotros</a></li>
+      <li><a href="IA.html">Inteligencia Artificial</a></li>
+      <li><a href="machinelearning.html">Machine Learning</a></li>
+      <li><a href="realidadvirtual.html">Realidad Virtual / AR</a></li>
+      <li><a href="blockchain.html">Blockchain</a></li>
+      <li><a href="internetdelascosas1.html">Internet de las Cosas</a></li>
+      <li><a href="CPC.html">Criptografía Post-Cuántica</a></li>
+      <li><a href="3dimpresion.html">Impresión 3D Avanzada</a></li>
+      <li><a href="Robotica.html">Robótica Avanzada</a></li>
+      <li><a href="edgecomputing.html">Edge Computing</a></li>
+      <li><a href="Formulario.html">Contacto</a></li>
+    </ul>
+
+
+  <!-- Header -->
+  <header class="center-align">
+    <div class="container">
+      <h1>Blockchain</h1>
+      <p>Registro descentralizado y seguro para un mundo digital confiable.</p>
+    </div>
+  </header>
+  <main class="container">
+    <!-- Sección ¿Qué es? -->
+    <section class="section scrollspy" id="que-es">
+      <div class="row valign-wrapper">
+        <div class="col s12 m6 fade-in fade-in-left">
+          <h4>🧠 ¿Qué es blockchain y por qué está revolucionando el mundo digital?</h4>
+          <p>
+                Blockchain es una tecnología que permite registrar información de forma segura, 
+                transparente y descentralizada. Imagina un libro de contabilidad digital que no está
+                en manos de una sola persona, sino que se comparte entre miles de computadoras. Cada 
+                vez que se guarda un dato (como una transacción o contrato), se crea un bloque que se 
+                une al anterior, formando una cadena que nadie puede alterar sin que todos lo noten.
+                </p>
+          </div>
+          <div class="col s12 m6 center-align fade-in fade-in-right">
+            <img alt="Imagen de Blockchain" class="responsive-img materialboxed section-img" src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRGAdx87WtXbBMzgbxDrqjwIfR4KrG82eOqf5Zb7ZmLrFOIcxdi" style="height:250px; width:100%; object-fit:cover; border-radius:10px;"/>
+        </div>
+      </div>
+      <div class="row valign-wrapper">
+        <div class="col s12 m6 fade-in fade-in-left">
+          <h5>🔐 ¿Cómo se protege esa cadena?</h5>
+          <ul class="collection">
+            <li class="collection-item">Su propio <strong>hash</strong>: una huella digital única generada por una fórmula matemática.</li>
+            <li class="collection-item">El <strong>hash del bloque anterior</strong>: mantiene la conexión entre bloques.</li>
+            <li class="collection-item">La <strong>información registrada</strong>: por ejemplo “Angie envió 5 tokens a Juan”.</li>
+          </ul>
+          <p>
+                Si alguien intenta modificar el contenido de un bloque, el hash cambia automáticamente. Y como los bloques están conectados, 
+                ese cambio rompe la cadena. Las demás computadoras (nodos) lo detectan y rechazan el intento. Es como cambiar una ficha 
+                en una fila de dominó: todo se desajusta.
+              </p>
+        </div>
+        <div class="col s12 m6 center-align fade-in fade-in-right">
+          <img alt="Explicación de hash" class="responsive-img materialboxed section-img" src="imagenes/hash.webp"/>
+        </div>
+      </div>
+    </section>
+    <!-- Ejemplo -->
+    <section class="section scrollspy fade-in fade-in-right" id="ejemplo">
+      <h4>🎯 Ejemplo práctico</h4>
+      <p>
+          Piensa en una empresa exportadora de camarones en Ecuador que quiere garantizar la 
+          trazabilidad de su producto. Con blockchain, puede registrar cada paso: desde la pesca, 
+          el transporte, el empaque, hasta la entrega final. Así, el comprador en Europa puede verificar 
+          que el camarón fue capturado de forma sostenible y llegó sin alteraciones. Si alguien intentara 
+          alterar los datos para decir que un lote fue premium cuando no lo fue, el hash se rompería y el 
+          sistema lo detectaría. Esto genera confianza y valor agregado.
+          </p>
+    </section>
+    <!-- Sección donde se usa -->
+    <section class="section scrollspy fade-in fade-in-left" id="donde-se-usa">
+      <h4>💼 ¿Dónde se usa?</h4>
+        <ul class="collection">
+        <li class="collection-item">Finanzas: criptomonedas como Bitcoin o Ethereum.</li>
+        <li class="collection-item">Logística: seguimiento de productos en tiempo real.</li>
+        <li class="collection-item">Salud: historial médico seguro y compartido entre instituciones.</li>
+        <li class="collection-item">Votaciones digitales: sistemas más transparentes y difíciles de manipular.</li>
+        <li class="collection-item">Contratos inteligentes: acuerdos que se ejecutan automáticamente al cumplirse condiciones.</li>
+      </ul>
+    </section>
+    <!-- Sección oferta -->
+    <section class="section scrollspy fade-in fade-in-left" id="oferta">
+      <h4>🚀 Oferta laboral en crecimiento</h4>
+      <p>Las empresas buscan perfiles como:</p>
+      <ul class="collection">
+        <li class="collection-item">Desarrolladores blockchain (Solidity, Ethereum, etc.)</li>
+        <li class="collection-item">Auditores de contratos inteligentes.</li>
+        <li class="collection-item">Consultores en trazabilidad y transformación digital.</li>
+        <li class="collection-item">Diseñadores UX para apps descentralizadas (dApps).</li>
+        <li class="collection-item">Especialistas en tokenización de activos (arte, bienes raíces, etc.).</li>
+      </ul>
+    </section>
+    <!-- Sección Datos -->
+    <section class="section scrollspy fade-in fade-in-left" id="datos">
+      <h4>💡 Datos curiosos</h4>
+      <ul class="collection">
+        <li class="collection-item">Según LinkedIn, los empleos relacionados con blockchain han crecido más del 500% en los últimos años.</li>
+        <li class="collection-item">América Latina está despertando interés por soluciones descentralizadas en sectores como agricultura, banca y educación.</li>
+      </ul>
+    </section>
+    <!-- Video -->
+    <section class="section scrollspy fade-in fade-in-left" id="video">
+      <h4>🎥 Videos explicativos</h4>
+      <div class="row">
+        <div class="col s12 m6">
+          <div class="card hoverable">
+            <div class="card-image">
+              <iframe allowfullscreen="" src="https://www.youtube.com/embed/8rUGRdOi3XM"></iframe>
+            </div>
+            <div class="card-content center-align">
+              <p>Historia y funcionamiento de blockchain</p>
+            </div>
+          </div>
+      </div>
+      <div class="col s12 m6">
+        <div class="card hoverable">
+          <div class="card-image">
+            <iframe allowfullscreen="" src="https://www.youtube.com/embed/Yn8WGaO__ak"></iframe>
+          </div>
+          <div class="card-content center-align">
+            <p>Aplicaciones de blockchain en el mundo real</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    </section>
+    <!-- Recurso -->
+    <section class="section scrollspy center-align fade-in fade-in-right" id="recurso">
+      <h4>📚 Recurso recomendado</h4>
+      <a class="btn-large waves-effect waves-light indigo darken-4" href="https://skillsbuild.org/es/students/course-catalog/blockchain" target="_blank">
+        <i class="material-icons left">school</i>Acceder al curso
+      </a>
+    </section>
+  </main>
+  </main>
+  <!-- FOOTER -->
+   <footer class="page-footer grey darken-3">
+    <div class="container">
+      <div class="row">
+        <!-- Información del sitio -->
+        <div class="col s12 m4 center-align">
+          <h6 class="white-text">Portal de Tecnologías Emergentes</h6>
+          <p class="grey-text text-lighten-3">© 2025 Todos los derechos reservados</p>
+        </div>
+        <!-- Información del proyecto -->
+        <div class="col s12 m4 center-align">
+          <p class="grey-text text-lighten-3">Proyecto Académico - Desarrollo de Software</p>
+          <p class="grey-text text-lighten-3">
+            <i class="material-icons left">code</i> Desarrollado con Materialize
+          </p>
+        </div>
+        <!-- Contacto -->
+        <div class="col s12 m4 center-align">
+          <h6 class="white-text">Contacto</h6>
+          <p class="grey-text text-lighten-3"><i class="material-icons left">email</i> ovbarcia@tes.edu.ec</p>
+          <p class="grey-text text-lighten-3"><i class="material-icons left">email</i> msarguello@tes.edu.ec</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  
+  <!-- JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    M.AutoInit(); // inicializa lo básico (sidenav, materialbox, etc.)
+
+    // ✅ Inicializa dropdown con opciones
+    const dropdowns = document.querySelectorAll('.dropdown-trigger');
+    M.Dropdown.init(dropdowns, {
+      coverTrigger: false,   // hace que el menú aparezca debajo del trigger (no arriba)
+      constrainWidth: false, // evita que tenga el mismo ancho que el botón
+    });
+
+    // Animación en scroll
+    const sections = document.querySelectorAll('.fade-in');
+    function revealOnScroll() {
+      const triggerBottom = window.innerHeight * 0.9;
+      sections.forEach(sec => {
+        const boxTop = sec.getBoundingClientRect().top;
+        if (boxTop < triggerBottom) sec.classList.add('show');
+      });
+    }
+    window.addEventListener('scroll', revealOnScroll);
+    revealOnScroll();
+  });
+</script>
+
+</body>
+</html>

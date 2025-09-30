@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>Robótica Avanzada</title>
+  <!-- Materialize CSS -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+  <style>
+    header {
+      background: #2c3e50;
+      color: white;
+      padding: 60px 0 40px 0;
+    }
+    header h1 {
+      font-weight: 600;
+      margin-bottom: 10px;
+    }
+    .section-img {
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+      transition: transform 0.3s ease;
+    }
+    .section-img:hover {
+      transform: scale(1.05);
+    }
+    iframe {
+      width: 100%;
+      height: 400px;
+      border-radius: 8px;
+      border: none;
+    }
+    /* Animaciones */
+    .fade-in-left {
+      opacity: 0;
+      transform: translateX(-50px);
+      transition: all 1s ease;
+    }
+    .fade-in-right {
+      opacity: 0;
+      transform: translateX(50px);
+      transition: all 1s ease;
+    }
+    .fade-in.show {
+      opacity: 1;
+      transform: translateX(0);
+    }
+
+    html, body {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+
+    main {
+      flex: 1 0 auto; 
+    }
+
+    footer {
+      margin-top: auto; 
+    }
+  </style>
+
+</head>
+
+<body>
+    <!-- Navbar fija -->
+    <div class="navbar-fixed">
+      <nav class="indigo darken-4">
+        <div class="nav-wrapper container">
+         <a class="brand-logo" href="inicio11.html">
+            <span style="white-space: nowrap;">Tecnologías Emergentes</span>
+          </a>
+          <a class="sidenav-trigger" data-target="mobile-demo" href="#"><i class="material-icons">menu</i></a>
+          <ul class="right hide-on-med-and-down">
+            <li><a href="inicio11.html#inicio">Inicio</a></li>
+            <li><a href="inicio11.html#sobrenosotros">Sobre Nosotros</a></li>
+            <li><a class="dropdown-trigger" data-target="dropdown1" href="#!">
+                      Explora las Tecnologías<i class="material-icons right">arrow_drop_down</i>
+            </a></li>
+            <li><a href="Formulario.html">Contacto</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    <!-- Dropdown con rutas correctas -->
+    <ul class="dropdown-content" id="dropdown1">
+      <li><a href="IA.html">Inteligencia Artificial</a></li>
+      <li><a href="machinelearning.html">Machine Learning</a></li>
+      <li><a href="realidadvirtual.html">Realidad Virtual / AR</a></li>
+      <li><a href="blockchain.html">Blockchain</a></li>
+      <li><a href="internetdelascosas1.html">Internet de las Cosas</a></li>
+      <li><a href="CPC.html">Criptografía Post-Cuántica</a></li>
+      <li><a href="3dimpresion.html">Impresión 3D Avanzada</a></li>
+      <li><a href="Robotica.html">Robótica Avanzada</a></li>
+      <li><a href="edgecomputing.html">Edge Computing</a></li>
+    </ul>
+    <!-- Menú móvil con enlaces -->
+    <ul class="sidenav" id="mobile-demo">
+      <li><a href="inicio11.html#inicio">Inicio</a></li>
+      <li><a href="inicio11.html#sobrenosotros">Sobre Nosotros</a></li>
+      <li><a href="IA.html">Inteligencia Artificial</a></li>
+      <li><a href="machinelearning.html">Machine Learning</a></li>
+      <li><a href="realidadvirtual.html">Realidad Virtual / AR</a></li>
+      <li><a href="blockchain.html">Blockchain</a></li>
+      <li><a href="internetdelascosas1.html">Internet de las Cosas</a></li>
+      <li><a href="CPC.html">Criptografía Post-Cuántica</a></li>
+      <li><a href="3dimpresion.html">Impresión 3D Avanzada</a></li>
+      <li><a href="Robotica.html">Robótica Avanzada</a></li>
+      <li><a href="edgecomputing.html">Edge Computing</a></li>
+      <li><a href="Formulario.html">Contacto</a></li>
+    </ul>
+
+  <!-- Encabezado -->
+  <header class="center-align" id="inicio">
+    <div class="container">
+      <h1>Robótica Avanzada: Innovación que Transforma el Futuro</h1>
+      <p>Robots más autónomos, inteligentes y colaborativos impulsados por IA, visión y conectividad.</p>
+    </div>
+  </header>
+  <main class="container indigo-text text-darken-4">
+    <!-- ¿Qué es? -->
+    <section class="row valign-wrapper section scrollspy" id="que-es">
+      <div class="col s12 m6 fade-in fade-in-left">
+        <h4>¿Qué es la robótica avanzada?</h4>
+        <p>
+              La robótica avanzada se presenta como un subcampo de la ingeniería y la tecnología 
+              dedicada al desarrollo de robots autónomos, inteligentes y adaptables. Integra Inteligencia Artificial,
+              Machine Learning, visión por computador, sistemas ciberfísicos e Internet de las Cosas.
+        </p>
+      </div>
+      <div class="col s12 m6 center-align fade-in fade-in-right">
+        <img alt="Robótica avanzada" class="materialboxed responsive-img section-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRG8xHNWB7OQ71O1W9di6FWQyyg0KIb56GMtg&amp;s"/>
+      </div>
+    </section>
+    <!-- Capacidades y aplicaciones -->
+    <section class="row valign-wrapper section scrollspy" id="capacidad">
+      <div class="col s12 m6 center-align fade-in fade-in-left">
+        <img alt="Robots en industria" class="materialboxed responsive-img section-img" src="https://d30gl8nkrjm6kp.cloudfront.net/articulos/articulos-954130.jpg"/>
+      </div>
+      <div class="col s12 m6 fade-in fade-in-right">
+        <h4>Capacidades y Aplicaciones</h4>
+        <p>Los robots avanzados pueden emular o incluso superar capacidades humanas en percepción, movilidad, manipulación y toma de decisiones. Aplicaciones destacadas:</p>
+        <ul class="collection">
+          <li class="collection-item">Cirugías asistidas con precisión</li>
+          <li class="collection-item">Exploración espacial y submarina</li>
+          <li class="collection-item">Manufactura flexible</li>
+          <li class="collection-item">Logística automatizada</li>
+          <li class="collection-item">Asistencia a personas mayores</li>
+        </ul>
+      </div>
+    </section>
+    <!-- Retos y oportunidades -->
+    <section class="row valign-wrapper fade-in fade-in-right">
+      <div class="col s12 m6 fade-in fade-in-left">
+        <h4>Retos y Oportunidades</h4>
+        <p>La robótica avanzada también plantea desafíos:</p>
+        <ul class="collection">
+          <li class="collection-item"><strong>Éticos:</strong> decisiones autónomas de las máquinas</li>
+          <li class="collection-item"><strong>Laborales:</strong> automatización y nuevas competencias</li>
+          <li class="collection-item"><strong>Sociales:</strong> acceso inclusivo y equitativo</li>
+        </ul>
+      </div>
+      <div class="col s12 m6 center-align fade-in fade-in-right">
+          <img alt="Concepto cyborg" class="materialboxed responsive-img section-img" src="https://img.freepik.com/fotos-premium/concepto-tecnologia-analisis-automatizacion-cyborg-think_493806-3089.jpg"/>
+      </div>
+    </section>
+    <!-- Video -->
+    <section class="card fade-in fade-in-left section scrollspy" id="video">
+      <div class="card-content center-align">
+        <h5>Recomendación para ver</h5>
+        <div class="video-container">
+          <iframe allowfullscreen="" src="https://www.youtube.com/embed/8kE3VmnlR7Y" title="Video Robótica Avanzada"></iframe>
+        </div>
+      </div>
+    </section>
+    <!-- Recursos -->
+    <section class="card fade-in fade-in-right section scrollspy" id="recursos">
+      <div class="card-content center-align">
+        <h5>Recursos Educativos</h5>
+        <p>Si deseas incursionar más sobre el tema aqui tienes un curso introductorio recomendado:</p>
+        <a class="btn-large waves-effect waves-light indigo darken-3" 
+          href="https://www.coursera.org/learn/introduccion-a-la-robotica-e-industria-4" 
+          rel="noopener" target="_blank" style="margin-top:20px;">
+          <i class="material-icons left">school</i> Coursera - Robótica e Industria 4.0
+        </a>
+      </div>
+    </section>
+  </main>
+  <!-- Footer -->
+ <footer class="page-footer grey darken-3">
+    <div class="container">
+      <div class="row">
+        <!-- Información del sitio -->
+        <div class="col s12 m4 center-align">
+          <h6 class="white-text">Portal de Tecnologías Emergentes</h6>
+          <p class="grey-text text-lighten-3">© 2025 Todos los derechos reservados</p>
+        </div>
+        <!-- Información del proyecto -->
+        <div class="col s12 m4 center-align">
+          <p class="grey-text text-lighten-3">Proyecto Académico - Desarrollo de Software</p>
+          <p class="grey-text text-lighten-3">
+            <i class="material-icons left">code</i> Desarrollado con Materialize
+          </p>
+        </div>
+        <!-- Contacto -->
+        <div class="col s12 m4 center-align">
+          <h6 class="white-text">Contacto</h6>
+          <p class="grey-text text-lighten-3"><i class="material-icons left">email</i> ovbarcia@tes.edu.ec</p>
+          <p class="grey-text text-lighten-3"><i class="material-icons left">email</i> msarguello@tes.edu.ec</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- Materialize JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    M.AutoInit(); // inicializa lo básico (sidenav, materialbox, etc.)
+
+    // ✅ Inicializa dropdown con opciones
+    const dropdowns = document.querySelectorAll('.dropdown-trigger');
+    M.Dropdown.init(dropdowns, {
+      coverTrigger: false,   // hace que el menú aparezca debajo del trigger (no arriba)
+      constrainWidth: false, // evita que tenga el mismo ancho que el botón
+    });
+
+    // Animación en scroll
+    const sections = document.querySelectorAll('.fade-in');
+    function revealOnScroll() {
+      const triggerBottom = window.innerHeight * 0.9;
+      sections.forEach(sec => {
+        const boxTop = sec.getBoundingClientRect().top;
+        if (boxTop < triggerBottom) sec.classList.add('show');
+      });
+    }
+    window.addEventListener('scroll', revealOnScroll);
+    revealOnScroll();
+  });
+</script>
+
+</body>
+</html>

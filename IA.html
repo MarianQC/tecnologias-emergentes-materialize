@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+
+<html lang="es">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Inteligencia Artificial - Portal de Tecnologías Emergentes</title>
+<!-- Materialize CSS -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+<style>
+    header {
+      background: #2c3e50;
+      color: white;
+      padding: 40px 0;
+    }
+    .section-card {
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .section-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+    }
+    .fade-in-left, .fade-in-right {
+      opacity: 0;
+      transition: all 1s ease;
+    }
+    .fade-in-left { transform: translateX(-50px); }
+    .fade-in-right { transform: translateX(50px); }
+    .fade-in.show {
+      opacity: 1;
+      transform: translateX(0);
+    }
+    .img-container {
+      margin: 25px auto;
+      max-width: 500px;
+    }
+    footer {
+      background: #2c3e50;
+      color: white;
+      padding: 20px 0;
+    }
+  </style>
+</head>
+<body>
+    <!-- Navbar fija -->
+    <div class="navbar-fixed">
+      <nav class="indigo darken-4">
+        <div class="nav-wrapper container">
+         <a class="brand-logo" href="inicio11.html">
+            <span style="white-space: nowrap;">Tecnologías Emergentes</span>
+          </a>
+          <a class="sidenav-trigger" data-target="mobile-demo" href="#"><i class="material-icons">menu</i></a>
+          <ul class="right hide-on-med-and-down">
+            <li><a href="inicio11.html#inicio">Inicio</a></li>
+            <li><a href="inicio11.html#sobrenosotros">Sobre Nosotros</a></li>
+            <li><a class="dropdown-trigger" data-target="dropdown1" href="#!">
+                      Explora las Tecnologías<i class="material-icons right">arrow_drop_down</i>
+            </a></li>
+            <li><a href="Formulario.html">Contacto</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+     <!-- Dropdown con rutas correctas -->
+    <ul class="dropdown-content" id="dropdown1">
+      <li><a href="IA.html">Inteligencia Artificial</a></li>
+      <li><a href="machinelearning.html">Machine Learning</a></li>
+      <li><a href="realidadvirtual.html">Realidad Virtual / AR</a></li>
+      <li><a href="blockchain.html">Blockchain</a></li>
+      <li><a href="internetdelascosas1.html">Internet de las Cosas</a></li>
+      <li><a href="CPC.html">Criptografía Post-Cuántica</a></li>
+      <li><a href="3dimpresion.html">Impresión 3D Avanzada</a></li>
+      <li><a href="Robotica.html">Robótica Avanzada</a></li>
+      <li><a href="edgecomputing.html">Edge Computing</a></li>
+    </ul>
+    <!-- Menú móvil con enlaces -->
+    <ul class="sidenav" id="mobile-demo">
+      <li><a href="inicio11.html#inicio">Inicio</a></li>
+      <li><a href="inicio11.html#sobrenosotros">Sobre Nosotros</a></li>
+      <li><a href="IA.html">Inteligencia Artificial</a></li>
+      <li><a href="machinelearning.html">Machine Learning</a></li>
+      <li><a href="realidadvirtual.html">Realidad Virtual / AR</a></li>
+      <li><a href="blockchain.html">Blockchain</a></li>
+      <li><a href="internetdelascosas1.html">Internet de las Cosas</a></li>
+      <li><a href="CPC.html">Criptografía Post-Cuántica</a></li>
+      <li><a href="3dimpresion.html">Impresión 3D Avanzada</a></li>
+      <li><a href="Robotica.html">Robótica Avanzada</a></li>
+      <li><a href="edgecomputing.html">Edge Computing</a></li>
+      <li><a href="Formulario.html">Contacto</a></li>
+    </ul>
+
+   <div class="container section center-align">
+  <h3 class="blue-text text-darken-3">Inteligencia Artificial</h3>
+  <p class="flow-text grey-text text-darken-1">Ideas que aprenden, tecnologías que evolucionan contigo.</p>
+</div>
+
+
+<main class="container">
+
+
+        <!-- Sección ¿Qué es? -->
+      <section class="card section-card fade-in fade-in-left" id="que-es">
+        <div class="card-content">
+          <h4>¿Qué es la Inteligencia Artificial?</h4>
+            <p>La Inteligencia Artificial (IA) es la rama de la informática que busca crear máquinas capaces de imitar o reproducir ciertos aspectos de la inteligencia humana. Combina algoritmos, modelos matemáticos y disciplinas como la estadística, lógica computacional, neurociencia e ingeniería de software. Gracias a la IA, las máquinas pueden analizar grandes volúmenes de datos, detectar patrones y predecir comportamientos futuros, mejorando la eficiencia de procesos y asistiendo en la toma de decisiones.</p>
+          <div class="img-container center-align">
+              <img alt="Representación conceptual de la Inteligencia Artificial" class="materialboxed responsive-img z-depth-2" src="https://i.pinimg.com/736x/7d/b7/7d/7db77d09b2e436c5c1113493f2c5abc7.jpg"/>
+          </div>
+        </div>
+      </section>
+
+        <!-- Tipos de IA -->
+
+        <section class="card section-card fade-in fade-in-right" id="tipos">
+          <div class="card-content">
+              <h4>Tipos de IA</h4>
+                <p>La IA puede clasificarse según <strong>capacidades</strong> y <strong>funcionalidades</strong>:</p>
+                  <ul class="collection">
+                    <li class="collection-item"><strong>IA Estrecha (Débil):</strong> Realiza tareas específicas, como asistentes virtuales o sistemas de recomendación.</li>
+                    <li class="collection-item"><strong>IA General:</strong> Capaz de aprender y razonar en cualquier tarea intelectual (aún no existe).</li>
+                    <li class="collection-item"><strong>Súper IA:</strong> Hipotética, superaría la inteligencia humana en todos los aspectos.</li>
+                  </ul>
+          <p>Según sus funcionalidades:</p>
+                  <ul class="collection">
+                    <li class="collection-item"><strong>Máquinas Reactivas:</strong> Sin memoria, reaccionan a estímulos inmediatos.</li>
+                    <li class="collection-item"><strong>Memoria Limitada:</strong> Usan experiencias pasadas para decisiones temporales (vehículos autónomos).</li>
+                    <li class="collection-item"><strong>Teoría de la Mente:</strong> IA avanzada capaz de comprender emociones e intenciones (teórica).</li>
+                    <li class="collection-item"><strong>IA Autoconsciente:</strong> Con conciencia de sí misma y su entorno (aún inexistente).</li>
+                  </ul>
+          <p>Fuente: <a href="https://www.ibm.com/es-es/think/topics/artificial-intelligence-types" target="_blank">IBM – Tipos de Inteligencia Artificial</a></p>
+          </div>
+        </section>
+
+
+      <!-- Aplicaciones actuales -->
+          <section class="card section-card fade-in fade-in-left" id="aplicaciones">
+            <div class="card-content">
+              <h4>Aplicaciones Actuales</h4>
+              <p>La IA está en múltiples ásection center-alignreas: sistemas de recomendación en plataformas de streaming, diagnósticos médicos, vehículos autónomos, detección de fraudes en banca y tutores inteligentes en educación. También impulsa metodologías de enseñanza y permite nuevas oportunidades profesionales en ciencia de datos y análisis predictivo.</p>
+              <div class="section"></div>
+              <div class="video-container">
+                <iframe width="560" height="315" 
+                src="https://www.youtube.com/embed/2bnViboSm8A" 
+                title="Video explicativo sobre IA" 
+                frameborder="0" allowfullscreen></iframe>
+              </div>
+
+              <div class="section"></div> 
+              <p >Curso sugerido: <a href="https://skillsbuild.org/es/students/course-catalog/artificial-intelligence" target="_blank">Ver curso sobre IA</a></p>
+            </div>
+          </section>
+</main>
+  <!-- Footer -->
+ <footer class="page-footer grey darken-3">
+    <div class="container">
+      <div class="row">
+        <!-- Información del sitio -->
+        <div class="col s12 m4 center-align">
+          <h6 class="white-text">Portal de Tecnologías Emergentes</h6>
+          <p class="grey-text text-lighten-3">© 2025 Todos los derechos reservados</p>
+        </div>
+        <!-- Información del proyecto -->
+        <div class="col s12 m4 center-align">
+          <p class="grey-text text-lighten-3">Proyecto Académico - Desarrollo de Software</p>
+          <p class="grey-text text-lighten-3">
+            <i class="material-icons left">code</i> Desarrollado con Materialize
+          </p>
+        </div>
+        <!-- Contacto -->
+        <div class="col s12 m4 center-align">
+          <h6 class="white-text">Contacto</h6>
+          <p class="grey-text text-lighten-3"><i class="material-icons left">email</i> ovbarcia@tes.edu.ec</p>
+          <p class="grey-text text-lighten-3"><i class="material-icons left">email</i> msarguello@tes.edu.ec</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+<!-- Materialize JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+      M.Sidenav.init(document.querySelectorAll('.sidenav'));
+      M.Materialbox.init(document.querySelectorAll('.materialboxed'));
+      M.Tooltip.init(document.querySelectorAll('.tooltipped'));
+
+      const sections = document.querySelectorAll('.fade-in');
+      function revealOnScroll() {
+        const triggerBottom = window.innerHeight * 0.9;
+        sections.forEach(sec => {
+          const boxTop = sec.getBoundingClientRect().top;
+          if (boxTop < triggerBottom) {
+            sec.classList.add('show');
+          }
+        });
+      }
+      window.addEventListener('scroll', revealOnScroll);
+      revealOnScroll();
+    });
+        M.Dropdown.init(document.querySelectorAll('.dropdown-trigger'), {
+        coverTrigger: false,  
+        constrainWidth: false 
+    });
+  </script>
+</body>
+</html>

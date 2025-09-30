@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>Criptografía Post-Cuántica</title>
+  <!-- Google Icon Font + Materialize CSS -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" rel="stylesheet"/>
+  <style>
+    body {
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+    main {
+      flex: 1 0 auto;
+    }
+    /* Hero con imagen de fondo */
+    .hero-section {
+      background: url("https://source.unsplash.com/1600x800/?quantum,cybersecurity") no-repeat center center/cover;
+      height: 80vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start; 
+      align-items: center;
+      color: white;
+      text-align: center;
+      padding-top: 120px; 
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+ 
+    .hero-section h2 {
+      font-weight: 600;
+      text-shadow: 1px 1px 4px rgba(0,0,0,0.6);
+    }
+        .title-hero {
+      margin-top: 50px; 
+    }
+    .card {
+      border-radius: 12px;
+      transition: transform 0.3s ease;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+    }
+    iframe {
+      border-radius: 12px;
+    }
+    /* Animaciones */
+    .fade-in-left {
+      opacity: 0;
+      transform: translateX(-50px);
+      transition: all 1s ease;
+    }
+    .fade-in-right {
+      opacity: 0;
+      transform: translateX(50px);
+      transition: all 1s ease;
+    }
+    .fade-in.show {
+      opacity: 1;
+      transform: translateX(0);
+    }
+        html, body {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+
+    main {
+      flex: 1 0 auto; 
+    }
+
+    footer {
+      margin-top: auto; 
+    }
+  </style>
+
+</head>
+
+<body>
+
+    <!-- Navbar fija -->
+    <div class="navbar-fixed">
+      <nav class="indigo darken-4">
+        <div class="nav-wrapper container">
+         <a class="brand-logo" href="inicio11.html">
+            <span style="white-space: nowrap;">Tecnologías Emergentes</span>
+          </a>
+          <a class="sidenav-trigger" data-target="mobile-demo" href="#"><i class="material-icons">menu</i></a>
+          <ul class="right hide-on-med-and-down">
+            <li><a href="inicio11.html#inicio">Inicio</a></li>
+            <li><a href="inicio11.html#sobrenosotros">Sobre Nosotros</a></li>
+            <li><a class="dropdown-trigger" data-target="dropdown1" href="#!">
+                      Explora las Tecnologías<i class="material-icons right">arrow_drop_down</i>
+            </a></li>
+            <li><a href="Formulario.html">Contacto</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    <!-- Dropdown con rutas correctas -->
+    <ul class="dropdown-content" id="dropdown1">
+      <li><a href="IA.html">Inteligencia Artificial</a></li>
+      <li><a href="machinelearning.html">Machine Learning</a></li>
+      <li><a href="realidadvirtual.html">Realidad Virtual / AR</a></li>
+      <li><a href="blockchain.html">Blockchain</a></li>
+      <li><a href="internetdelascosas1.html">Internet de las Cosas</a></li>
+      <li><a href="CPC.html">Criptografía Post-Cuántica</a></li>
+      <li><a href="3dimpresion.html">Impresión 3D Avanzada</a></li>
+      <li><a href="Robotica.html">Robótica Avanzada</a></li>
+      <li><a href="edgecomputing.html">Edge Computing</a></li>
+    </ul>
+    <!-- Menú móvil con enlaces -->
+    <ul class="sidenav" id="mobile-demo">
+      <li><a href="inicio11.html#inicio">Inicio</a></li>
+      <li><a href="inicio11.html#sobrenosotros">Sobre Nosotros</a></li>
+      <li><a href="IA.html">Inteligencia Artificial</a></li>
+      <li><a href="machinelearning.html">Machine Learning</a></li>
+      <li><a href="realidadvirtual.html">Realidad Virtual / AR</a></li>
+      <li><a href="blockchain.html">Blockchain</a></li>
+      <li><a href="internetdelascosas1.html">Internet de las Cosas</a></li>
+      <li><a href="CPC.html">Criptografía Post-Cuántica</a></li>
+      <li><a href="3dimpresion.html">Impresión 3D Avanzada</a></li>
+      <li><a href="Robotica.html">Robótica Avanzada</a></li>
+      <li><a href="edgecomputing.html">Edge Computing</a></li>
+      <li><a href="Formulario.html">Contacto</a></li>
+    </ul>
+
+  <!-- Hero -->
+  <section class="hero-section" id="inicio">
+    <h2 class="white-text">Protege tus datos del mañana, hoy</h2>
+  </section>
+  <main>
+    <!-- ¿Qué es? -->
+    <section class="section container" id="about">
+      <div class="row valign-wrapper">
+        <div class="col s12 m6 fade-in fade-in-left">
+          <img alt="Quantum" class="responsive-img z-depth-2" src="https://academy.bit2me.com/wp-content/uploads/2025/03/Articulo_Blockchain-post-cuantico_Bit2Me-Academy.jpg"/>
+        </div>
+        <div class="col s12 m6 fade-in fade-in-right">
+          <h4>¿Qué es la criptografía post-cuántica?</h4>
+          <p>La criptografía post-cuántica (PQC) agrupa algoritmos de clave pública diseñados
+                    para resistir ataques de ordenadores cuánticos que podrían romper RSA y ECC.</p>
+          <p>Incluye esquemas de intercambio de claves (KEM) y firmas digitales basados en problemas
+                    matemáticos distintos de la factorización o el logaritmo discreto.</p>
+        </div>
+      </div>
+    </section>
+    <!-- Importancia -->
+    <section class="section indigo lighten-5" id="importance">
+      <div class="container">
+        <h4 class="center-align">¿Por qué es importante?</h4>
+        <div class="row">
+          <div class="col s12 m6 fade-in fade-in-left">
+            <div class="card hoverable">
+              <div class="card-content">
+                <span class="card-title">Harvest now, decrypt later</span>
+                <p>Los atacantes pueden almacenar datos cifrados hoy y descifrarlos en el futuro con computadoras cuánticas. Esto es crítico para información de largo plazo, como historiales médicos o gubernamentales.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col s12 m6 fade-in fade-in-right">
+            <div class="card hoverable">
+              <div class="card-content">
+                <span class="card-title">Preparación y cumplimiento</span>
+                <p>Grandes proveedores y reguladores promueven la adopción de PQC. Migrar a tiempo evita riesgos de incompatibilidad en la era cuántica.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Cómo funciona -->
+    <section class="section container" id="how">
+      <h4 class="center-align">¿Cómo funciona?</h4>
+      <div class="row">
+        <div class="col s12 m4 fade-in fade-in-left">
+          <div class="card hoverable center-align">
+            <div class="card-content">
+              <i class="material-icons large indigo-text text-darken-3">vpn_key</i>
+              <h5>CRYSTALS-Kyber</h5>
+              <p>Intercambio seguro de claves</p>
+            </div>
+          </div>
+        </div>
+        <div class="col s12 m4 fade-in fade-in-left">
+          <div class="card hoverable center-align">
+            <div class="card-content">
+              <i class="material-icons large indigo-text text-darken-3">verified_user</i>
+              <h5>CRYSTALS-Dilithium</h5>
+              <p>Firmas digitales resistentes</p>
+            </div>
+          </div>
+        </div>
+        <div class="col s12 m4 fade-in fade-in-right">
+          <div class="card hoverable center-align">
+            <div class="card-content">
+              <i class="material-icons large indigo-text text-darken-3">security</i>
+              <h5>SPHINCS+ &amp; FALCON</h5>
+              <p>Firmas seguras adicionales</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Futuro -->
+    <section class="section indigo lighten-5" id="future">
+      <div class="container fade-in fade-in-left">
+        <h4 class="center-align">Preparándose para el futuro</h4>
+        <ul class="collection">
+          <li class="collection-item">✔ Estrategias de seguridad cuántica</li>
+          <li class="collection-item">✔ Migraciones planificadas</li>
+          <li class="collection-item">✔ Hojas de ruta de productos</li>
+        </ul>
+      </div>
+    </section>
+    <!-- Video -->
+    <section class="section container fade-in fade-in-right">
+      <h4 class="center-align">Mira cómo funciona</h4>
+      <div class="video-container z-depth-3">
+        <iframe allowfullscreen="" src="https://www.youtube.com/embed/-jAcNVoJ8nM" title="Video PQC"></iframe>
+      </div>
+    </section>
+    <!-- Recurso académico -->
+    <section class="section container fade-in fade-in-left" id="academico">
+      <h4 class="center-align">Recurso Académico</h4>
+      <p class="center-align">
+            Revisa el curso de IBM para profundizar en criptografía post-cuántica:
+          </p>
+      <p class="center-align">
+      <a class="btn-large waves-effect waves-light indigo darken-3" href="https://developer.ibm.com/blogs/quantum-introducing-course-post-quantum-cryptography" target="_blank">
+      <i class="material-icons left">school</i> Curso IBM Developer
+            </a>
+      </p>
+    </section>
+  </main>
+  <!-- Footer -->
+  <footer class="page-footer grey darken-3">
+    <div class="container">
+      <div class="row">
+        <!-- Información del sitio -->
+        <div class="col s12 m4 center-align">
+          <h6 class="white-text">Portal de Tecnologías Emergentes</h6>
+          <p class="grey-text text-lighten-3">© 2025 Todos los derechos reservados</p>
+        </div>
+        <!-- Información del proyecto -->
+        <div class="col s12 m4 center-align">
+          <p class="grey-text text-lighten-3">Proyecto Académico - Desarrollo de Software</p>
+          <p class="grey-text text-lighten-3">
+            <i class="material-icons left">code</i> Desarrollado con Materialize
+          </p>
+        </div>
+        <!-- Contacto -->
+        <div class="col s12 m4 center-align">
+          <h6 class="white-text">Contacto</h6>
+          <p class="grey-text text-lighten-3"><i class="material-icons left">email</i> ovbarcia@tes.edu.ec</p>
+          <p class="grey-text text-lighten-3"><i class="material-icons left">email</i> msarguello@tes.edu.ec</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- Scripts -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    M.AutoInit(); // inicializa lo básico (sidenav, materialbox, etc.)
+
+    // ✅ Inicializa dropdown con opciones
+    const dropdowns = document.querySelectorAll('.dropdown-trigger');
+    M.Dropdown.init(dropdowns, {
+      coverTrigger: false,   // hace que el menú aparezca debajo del trigger (no arriba)
+      constrainWidth: false, // evita que tenga el mismo ancho que el botón
+    });
+
+    // Animación en scroll
+    const sections = document.querySelectorAll('.fade-in');
+    function revealOnScroll() {
+      const triggerBottom = window.innerHeight * 0.9;
+      sections.forEach(sec => {
+        const boxTop = sec.getBoundingClientRect().top;
+        if (boxTop < triggerBottom) sec.classList.add('show');
+      });
+    }
+    window.addEventListener('scroll', revealOnScroll);
+    revealOnScroll();
+  });
+</script>
+
+</body>
+</html>

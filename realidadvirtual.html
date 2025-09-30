@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <title>Realidad Virtual y Realidad Aumentada</title>
+  <!-- Google Icon Font & Materialize CSS -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" rel="stylesheet"/>
+  <style>
+    header {
+      margin-top: 70px;
+      text-align: center;
+    }
+    .section {
+      padding: 3rem 0;
+    }
+    iframe {
+      width: 100%;
+      height: 300px;
+      border-radius: 8px;
+    }
+    .modal {
+      border-radius: 12px;
+    }
+    .container.center-align a.btn {
+    margin-bottom: 30px;
+    }
+
+    /* Estilo para tabla de diferencias */
+#diferencias table {
+  table-layout: fixed;
+  width: 100%;
+}
+
+#diferencias th,
+#diferencias td {
+  padding: 5px;
+  word-break: break-word;
+  font-weight: 400; /* Letra más fina */
+  text-align: center;
+}
+
+/* Ajuste extra para pantallas pequeñas */
+@media only screen and (max-width: 600px) {
+  #diferencias table {
+    font-size: 0.7rem;
+    padding: 4px;
+  }
+}
+
+  </style>
+
+</head>
+
+<body>
+  
+    <!-- Navbar fija -->
+    <div class="navbar-fixed">
+      <nav class="indigo darken-4">
+        <div class="nav-wrapper container">
+         <a class="brand-logo" href="inicio11.html">
+            <span style="white-space: nowrap;">Tecnologías Emergentes</span>
+          </a>
+          <a class="sidenav-trigger" data-target="mobile-demo" href="#"><i class="material-icons">menu</i></a>
+          <ul class="right hide-on-med-and-down">
+            <li><a href="inicio11.html#inicio">Inicio</a></li>
+            <li><a href="inicio11.html#sobrenosotros">Sobre Nosotros</a></li>
+            <li><a class="dropdown-trigger" data-target="dropdown1" href="#!">
+                      Explora las Tecnologías<i class="material-icons right">arrow_drop_down</i>
+            </a></li>
+            <li><a href="Formulario.html">Contacto</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    <!-- Dropdown con rutas correctas -->
+    <ul class="dropdown-content" id="dropdown1">
+      <li><a href="IA.html">Inteligencia Artificial</a></li>
+      <li><a href="machinelearning.html">Machine Learning</a></li>
+      <li><a href="realidadvirtual.html">Realidad Virtual / AR</a></li>
+      <li><a href="blockchain.html">Blockchain</a></li>
+      <li><a href="internetdelascosas1.html">Internet de las Cosas</a></li>
+      <li><a href="CPC.html">Criptografía Post-Cuántica</a></li>
+      <li><a href="3dimpresion.html">Impresión 3D Avanzada</a></li>
+      <li><a href="Robotica.html">Robótica Avanzada</a></li>
+      <li><a href="edgecomputing.html">Edge Computing</a></li>
+    </ul>
+    <!-- Menú móvil con enlaces -->
+    <ul class="sidenav" id="mobile-demo">
+      <li><a href="inicio11.html#inicio">Inicio</a></li>
+      <li><a href="inicio11.html#sobrenosotros">Sobre Nosotros</a></li>
+      <li><a href="IA.html">Inteligencia Artificial</a></li>
+      <li><a href="machinelearning.html">Machine Learning</a></li>
+      <li><a href="realidadvirtual.html">Realidad Virtual / AR</a></li>
+      <li><a href="blockchain.html">Blockchain</a></li>
+      <li><a href="internetdelascosas1.html">Internet de las Cosas</a></li>
+      <li><a href="CPC.html">Criptografía Post-Cuántica</a></li>
+      <li><a href="3dimpresion.html">Impresión 3D Avanzada</a></li>
+      <li><a href="Robotica.html">Robótica Avanzada</a></li>
+      <li><a href="edgecomputing.html">Edge Computing</a></li>
+      <li><a href="Formulario.html">Contacto</a></li>
+    </ul>
+
+
+  <!-- HEADER -->
+  <header class="container" id="intro">
+    <h1 class="blue-text text-darken-2">Realidad Virtual y Realidad Aumentada</h1>
+    <p class="flow-text grey-text text-darken-1">Explora cómo estas tecnologías están transformando el mundo.</p>
+  </header>
+
+ <!-- Imagenes -->
+<div class="container">
+  <div class="row">
+    <!-- Imagen 1 -->
+    <div class="col s12 m6">
+      <img src="imagenes/vr.jpeg" 
+           alt="VR" 
+           class="responsive-img z-depth-2"
+           style="height: 300px; width: 100%; object-fit: cover; border-radius: 10px;">
+    </div>
+
+    <!-- Imagen 2 -->
+    <div class="col s12 m6">
+      <img src="imagenes/ar2.jpeg" 
+           alt="AR" 
+           class="responsive-img z-depth-2"
+           style="height: 300px; width: 100%; object-fit: cover; border-radius: 10px;">
+    </div>
+  </div>
+</div>
+  <!-- EXPLICACIÓN VR/AR -->
+  <section class="container section">
+    <div class="row">
+      <div class="col s12 m6">
+        <h4 class="blue-text text-darken-2">¿Qué es la Realidad Virtual (VR)?</h4>
+        <p>La <strong>Realidad Virtual</strong> crea un entorno digital inmersivo en el que el usuario interactúa con lentes, controladores y sensores.</p>
+        <ul class="collection">
+          <li class="collection-item">Pantallas de alta resolución</li>
+          <li class="collection-item">Sensores de movimiento</li>
+          <li class="collection-item">Procesamiento gráfico avanzado</li>
+        </ul>
+      </div>
+      <div class="col s12 m6">
+        <h4 class="blue-text text-darken-4">¿Qué es la Realidad Aumentada (AR)?</h4>
+        <p>La <strong>Realidad Aumentada</strong> agrega objetos digitales al mundo real usando smartphones, tablets o lentes especiales.</p>
+        <ul class="collection">
+          <li class="collection-item">Cámaras y sensores</li>
+          <li class="collection-item">Reconocimiento de patrones</li>
+          <li class="collection-item">Displays transparentes</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <!-- HISTORIA -->
+  <section class="container section" id="historia">
+    <h4 class="center-align blue-text text-darken-2">Historia de la Realidad Virtual y Aumentada</h4>
+    <p>La <strong>Realidad Virtual</strong> comenzó en la década de 1960 con el primer casco de visión desarrollado por Ivan Sutherland, conocido como “The Sword of Damocles”. Desde entonces, ha evolucionado con los avances en gráficos 3D y hardware especializado.</p>
+    <p>La <strong>Realidad Aumentada</strong> surgió más tarde, con aplicaciones como Pokémon Go (2016) que popularizaron la tecnología al público general. Hoy en día, empresas como Apple, Meta y Microsoft desarrollan dispositivos dedicados a estas experiencias.</p>
+  </section>
+  <!-- DIFERENCIAS -->
+<section class="container section" id="diferencias">
+  <h4 class="center-align indigo-text text-darken-2">Diferencias entre VR y AR</h4>
+  <table class="highlight centered">
+    <thead>
+      <tr>
+        <th>Característica</th>
+        <th>VR</th>
+        <th>AR</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Entorno</td>
+        <td>100% digital</td>
+        <td>Digital sobre el mundo real</td>
+      </tr>
+      <tr>
+        <td>Dispositivos</td>
+        <td>Oculus, HTC Vive</td>
+        <td>Smartphones, ARKit, ARCore</td>
+      </tr>
+      <tr>
+        <td>Ejemplos</td>
+        <td>Videojuegos VR</td>
+        <td>Pokémon Go</td>
+      </tr>
+    </tbody>
+  </table>
+</section>
+
+
+  <!-- videos -->
+  <section class="container section" id="videos">
+  <h4 class="center-align blue-text text-darken-2">Videos Recomendados</h4>
+  <div class="row">
+    <!-- Video 1 -->
+    <div class="col s12 m6 l6">
+      <div class="card">
+        <div class="card-image">
+          <iframe src="https://www.youtube.com/embed/IzAuGa7YKeU" allowfullscreen></iframe>
+        </div>
+        <div class="card-content center-align">
+          Fundamentos de VR/AR
+        </div>
+      </div>
+    </div>
+    <!-- Video 2 -->
+    <div class="col s12 m6 l6">
+      <div class="card">
+        <div class="card-image">
+          <iframe src="https://www.youtube.com/embed/iAxk-k4GfsI" allowfullscreen></iframe>
+        </div>
+        <div class="card-content center-align">
+          Aplicación VR (Recorrido TES360)
+        </div>
+      </div>
+    </div>
+    <!-- Video 3 -->
+    <div class="col s12 m6 l6">
+      <div class="card">
+        <div class="card-image">
+          <iframe src="https://www.youtube.com/embed/ztTF-vOVVQA?si=Il-tNKJE12mephtU" allowfullscreen></iframe>
+        </div>
+        <div class="card-content center-align">
+          AR en la Educación
+        </div>
+      </div>
+    </div>
+    <!-- Video 4 -->
+    <div class="col s12 m6 l6">
+      <div class="card">
+        <div class="card-image">
+          <iframe src="https://www.youtube.com/embed/PLpDCK3Zy7Q?si=H23PPg1jhsHKlxx2" allowfullscreen></iframe>
+        </div>
+        <div class="card-content center-align">
+          Diferencias
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+  <!-- CURSOS -->
+<section class="container section">
+  <div class="center-align">
+    <h4 class="blue-text text-darken-3">
+      <i class="material-icons left">school</i> Cursos Recomendados de Realidad VR/AR
+    </h4>
+    <p class="grey-text text-darken-1">Aprende y desarrolla con las mejores plataformas.</p>
+  </div>
+
+  <div class="row">
+    <!-- Curso 1 -->
+    <div class="col s12 m6 l4">
+      <div class="card hoverable z-depth-1">
+        <div class="card-content center-align">
+          <i class="material-icons large blue-text text-darken-2">school</i>
+          <h6 class="blue-text text-darken-2"><strong>Fundación Telefónica</strong></h6>
+          <p class="grey-text text-darken-1">Realidad Aumentada y Virtual en tu Aula</p>
+        </div>
+        <div class="card-action center-align">
+          <a href="https://conectaempleo-formacion.fundaciontelefonica.com/web/gl-realidad-aumentada-y-virtual-en-tu-aula-ed-9" 
+             class="btn white black-text z-depth-1 waves-effect" 
+             style="border-radius: 8px;" target="_blank">
+            VER CURSO <i class="material-icons right">open_in_new</i>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Curso 2 -->
+    <div class="col s12 m6 l4">
+      <div class="card hoverable z-depth-1">
+        <div class="card-content center-align">
+          <i class="material-icons large blue-text text-darken-2">play_circle_filled</i>
+          <h6 class="blue-text text-darken-2"><strong>Especialización en Realidad Virtual</strong></h6>
+          <p class="grey-text text-darken-1">Ofrecido por Coursera</p>
+        </div>
+        <div class="card-action center-align">
+          <a href="https://www.coursera.org/specializations/virtual-reality#outcomes" 
+             class="btn white black-text z-depth-1 waves-effect" 
+             style="border-radius: 8px;" target="_blank">
+            VER CURSO <i class="material-icons right">open_in_new</i>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Curso 3 -->
+    <div class="col s12 m6 l4">
+      <div class="card hoverable z-depth-1">
+        <div class="card-content center-align">
+          <i class="material-icons large blue-text text-darken-2">menu_book</i>
+          <h6 class="blue-text text-darken-2"><strong>Curso Gratis de Realidad Virtual</strong></h6>
+          <p class="grey-text text-darken-1">Plataforma: Espacio BIM</p>
+        </div>
+        <div class="card-action center-align">
+          <a href="https://www.espaciobim.com/cursos/realidad-virtual/gratis" 
+             class="btn white black-text z-depth-1 waves-effect" 
+             style="border-radius: 8px;" target="_blank">
+            VER CURSO <i class="material-icons right">open_in_new</i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <!-- BOTÓN MODAL -->
+  <div class="container center-align">
+    <a class="waves-effect indigo darken-4 btn modal-trigger" href="#modalInfo">Más información</a>
+  </div>
+  <!-- MODAL -->
+  <div class="modal" id="modalInfo">
+    <div class="modal-content">
+      <h4>Realidad Virtual y Aumentada</h4>
+      <p>Estas tecnologías están revolucionando la educación, la salud y el entretenimiento, creando experiencias inmersivas y nuevas oportunidades laborales.</p>
+    </div>
+    <div class="modal-footer">
+      <a class="modal-close waves-effect waves-green btn-flat" href="#!">Cerrar</a>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+ <footer class="page-footer grey darken-3">
+    <div class="container">
+      <div class="row">
+        <!-- Información del sitio -->
+        <div class="col s12 m4 center-align">
+          <h6 class="white-text">Portal de Tecnologías Emergentes</h6>
+          <p class="grey-text text-lighten-3">© 2025 Todos los derechos reservados</p>
+        </div>
+        <!-- Información del proyecto -->
+        <div class="col s12 m4 center-align">
+          <p class="grey-text text-lighten-3">Proyecto Académico - Desarrollo de Software</p>
+          <p class="grey-text text-lighten-3">
+            <i class="material-icons left">code</i> Desarrollado con Materialize
+          </p>
+        </div>
+        <!-- Contacto -->
+        <div class="col s12 m4 center-align">
+          <h6 class="white-text">Contacto</h6>
+          <p class="grey-text text-lighten-3"><i class="material-icons left">email</i> ovbarcia@tes.edu.ec</p>
+          <p class="grey-text text-lighten-3"><i class="material-icons left">email</i> msarguello@tes.edu.ec</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+</footer>
+
+  <!-- JS Materialize -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      M.Sidenav.init(document.querySelectorAll('.sidenav'));
+      M.Slider.init(document.querySelectorAll('.slider'), { indicators: true, height: 500 });
+      M.Modal.init(document.querySelectorAll('.modal'));
+      M.Tooltip.init(document.querySelectorAll('.tooltipped'));
+      M.FloatingActionButton.init(document.querySelectorAll('.fixed-action-btn'), { direction: 'left' });
+    });
+        M.Dropdown.init(document.querySelectorAll('.dropdown-trigger'), {
+        coverTrigger: false,  
+        constrainWidth: false 
+    });
+  </script>
+</body>
+</html>

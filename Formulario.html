@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Tecnologías Emergentes</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+
+</head>
+<body>
+
+
+    <!-- Navbar fija -->
+    <div class="navbar-fixed">
+      <nav class="indigo darken-4">
+        <div class="nav-wrapper container">
+         <a class="brand-logo" href="inicio11.html">
+            <span style="white-space: nowrap;">Tecnologías Emergentes</span>
+          </a>
+          <a class="sidenav-trigger" data-target="mobile-demo" href="#"><i class="material-icons">menu</i></a>
+          <ul class="right hide-on-med-and-down">
+            <li><a href="inicio11.html#inicio">Inicio</a></li>
+            <li><a href="inicio11.html#sobrenosotros">Sobre Nosotros</a></li>
+            <li><a class="dropdown-trigger" data-target="dropdown1" href="#!">
+                      Explora las Tecnologías<i class="material-icons right">arrow_drop_down</i>
+            </a></li>
+            <li><a href="Formulario.html">Contacto</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    <!-- Dropdown con rutas correctas -->
+    <ul class="dropdown-content" id="dropdown1">
+      <li><a href="IA.html">Inteligencia Artificial</a></li>
+      <li><a href="machinelearning.html">Machine Learning</a></li>
+      <li><a href="realidadvirtual.html">Realidad Virtual / AR</a></li>
+      <li><a href="blockchain.html">Blockchain</a></li>
+      <li><a href="internetdelascosas1.html">Internet de las Cosas</a></li>
+      <li><a href="3dimpresion.html">Impresión 3D Avanzada</a></li>
+      <li><a href="Robotica.html">Robótica Avanzada</a></li>
+      <li><a href="edgecomputing.html">Edge Computing</a></li>
+    <li><a href="CPC.html">CPC</a></li>
+    </ul>
+    <!-- Menú móvil con enlaces -->
+    <ul class="sidenav" id="mobile-demo">
+      <li><a href="inicio11.html#inicio">Inicio</a></li>
+      <li><a href="inicio11.html#sobrenosotros">Sobre Nosotros</a></li>
+      <li><a href="IA.html">Inteligencia Artificial</a></li>
+      <li><a href="machinelearning.html">Machine Learning</a></li>
+      <li><a href="realidadvirtual.html">Realidad Virtual / AR</a></li>
+      <li><a href="blockchain.html">Blockchain</a></li>
+      <li><a href="internetdelascosas1.html">Internet de las Cosas</a></li>
+      <li><a href="3dimpresion.html">Impresión 3D Avanzada</a></li>
+      <li><a href="Robotica.html">Robótica Avanzada</a></li>
+      <li><a href="edgecomputing.html">Edge Computing</a></li>
+      <li><a href="CPC.html">CPC</a></li>
+      <li><a href="Formulario.html">Contacto</a></li>
+    </ul>
+
+     <!-- Encabezado -->
+    <div class="container" style="margin-top: 50px; margin-bottom:50px;">
+        <div class="card white z-depth-3">
+            <div class="card-content">
+                <span class="card-title center blue-text text-darken-3">Formulario de Contacto</span>
+                <form id="formContacto">
+                    <div class="row">
+                        <div class="input-field col s12 m6">
+                            <i class="material-icons prefix blue-text">person</i>
+                            <input id="campo_nombre" name="nombre" type="text" required maxlength="30">
+                            <label for="campo_nombre">Nombre</label>
+                        </div>
+                        <div class="input-field col s12 m6">
+                            <i class="material-icons prefix blue-text">phone</i>
+                            <input id="telefono" name="telefono" type="tel" pattern="^[0-9]{7,15}$" required>
+                            <label for="telefono">Número Telefónico</label>
+                        </div>
+                        <div class="input-field col s12 m6">
+                            <i class="material-icons prefix blue-text">email</i>
+                            <input id="email" name="email" type="email" placeholder="example123@gmail.com" required>
+                            <label for="email">Correo Electrónico</label>
+                        </div>
+                        <div class="input-field col s12">
+                            <i class="material-icons prefix blue-text">comment</i>
+                            <textarea id="comentario" name="comentario" class="materialize-textarea" required></textarea>
+                            <label for="comentario">Comentario</label>
+                        </div>
+                    </div>
+                    <div class="center">
+                        <button type="submit" class="btn blue darken-2 waves-effect waves-light">
+                            <i class="material-icons left">send</i>Enviar
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    
+
+  <!-- FOOTER -->
+  <footer class="page-footer grey darken-3">
+    <div class="container">
+      <div class="row">
+        <!-- Información del sitio -->
+        <div class="col s12 m4 center-align">
+          <h6 class="white-text">Portal de Tecnologías Emergentes</h6>
+          <p class="grey-text text-lighten-3">© 2025 Todos los derechos reservados</p>
+        </div>
+        <!-- Información del proyecto -->
+        <div class="col s12 m4 center-align">
+          <p class="grey-text text-lighten-3">Proyecto Académico - Desarrollo de Software</p>
+          <p class="grey-text text-lighten-3">
+            <i class="material-icons left">code</i> Desarrollado con Materialize
+          </p>
+        </div>
+        <!-- Contacto -->
+        <div class="col s12 m4 center-align">
+          <h6 class="white-text">Contacto</h6>
+          <p class="grey-text text-lighten-3"><i class="material-icons left">email</i> ovbarcia@tes.edu.ec</p>
+          <p class="grey-text text-lighten-3"><i class="material-icons left">email</i> msarguello@tes.edu.ec</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+   <!-- Materialize JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        M.Sidenav.init(document.querySelectorAll('.sidenav'));
+        M.Dropdown.init(document.querySelectorAll('.dropdown-trigger'), {
+            hover: true,
+            coverTrigger: false,
+            constrainWidth: false
+        });
+
+        // Validación simple con toast
+        const form = document.getElementById('formContacto');
+            form.addEventListener('submit', function(e){
+                e.preventDefault();
+                if(form.checkValidity()){
+                    M.toast({html:'Formulario enviado correctamente.', classes:'green'});
+                    form.reset();
+                }else{
+                    M.toast({html:'Por favor corrige los errores antes de enviar.', classes:'red'});
+                }
+             });
+        });
+    </script>
+
+</body>
+
+</html>
